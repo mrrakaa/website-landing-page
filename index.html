@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RakLabs — Jasa pembuatan website profesional untuk homestay, villa, tour travel, dan bisnis wisata di Yogyakarta." />
+  <title>RakLabs — Website Profesional untuk Bisnis Wisata Yogyakarta</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans bg-[#030c1a] text-[#d4e3f5]">
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-5 py-4">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:0;padding-bottom:0">
+
+    <a href="#hero" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#fbbf24,#f59e0b);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#030c1a" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+      </div>
+      <span style="color:#fff;font-weight:800;font-size:18px;letter-spacing:-0.5px">Rak<span style="color:#fbbf24">Labs</span></span>
+    </a>
+
+    <div class="hidden md:flex" style="align-items:center;gap:28px">
+      <a href="#masalah"   class="nav-link" style="color:#a0bedd;font-size:14px;font-weight:500;text-decoration:none;transition:color .2s">Masalah</a>
+      <a href="#solusi"    class="nav-link" style="color:#a0bedd;font-size:14px;font-weight:500;text-decoration:none;transition:color .2s">Solusi</a>
+      <a href="#portfolio" class="nav-link" style="color:#a0bedd;font-size:14px;font-weight:500;text-decoration:none;transition:color .2s">Portfolio</a>
+      <a href="#harga"     class="nav-link" style="color:#a0bedd;font-size:14px;font-weight:500;text-decoration:none;transition:color .2s">Harga</a>
+      <a href="#kontak"    class="nav-link" style="color:#a0bedd;font-size:14px;font-weight:500;text-decoration:none;transition:color .2s">Kontak</a>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20ingin%20konsultasi%20website" target="_blank" rel="noopener" class="btn-primary" style="padding:10px 20px;font-size:14px">Konsultasi Gratis</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden" aria-label="Menu" aria-expanded="false"
+      style="display:flex;flex-direction:column;gap:5px;padding:8px;background:none;border:none;cursor:pointer">
+      <span style="display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:all .3s"></span>
+      <span style="display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:all .3s"></span>
+      <span style="display:block;width:20px;height:2px;background:#fff;border-radius:2px;transition:all .3s"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu">
+    <a href="#masalah">Masalah</a>
+    <a href="#solusi">Solusi</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#harga">Harga</a>
+    <a href="#kontak">Kontak</a>
+    <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20ingin%20konsultasi%20website" target="_blank" rel="noopener" class="btn-primary" style="margin-top:8px;justify-content:center">Konsultasi Gratis</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero" style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:80px">
+
+  <div class="blob" style="width:700px;height:700px;top:-200px;right:-200px;opacity:.12;background:radial-gradient(circle,#fbbf24,transparent 65%)"></div>
+  <div class="blob" style="width:500px;height:500px;bottom:-100px;left:-150px;opacity:.08;background:radial-gradient(circle,#1e4878,transparent 65%)"></div>
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(251,191,36,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(251,191,36,.04) 1px,transparent 1px);background-size:64px 64px"></div>
+
+  <div class="wrap" style="position:relative;padding-top:48px;padding-bottom:48px">
+    <div style="display:grid;grid-template-columns:1fr;gap:56px;align-items:center">
+
+      <!-- LEFT: Copy -->
+      <div style="max-width:600px">
+
+        <div class="reveal" style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(251,191,36,.3);border-radius:100px;padding:8px 18px;margin-bottom:28px;background:rgba(251,191,36,.06)">
+          <span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;display:block;animation:pulse 2s infinite;flex-shrink:0"></span>
+          <span style="color:#fbbf24;font-size:12px;font-weight:600;letter-spacing:1px">Melayani Bisnis Wisata Yogyakarta &amp; Sekitarnya</span>
+        </div>
+
+        <h1 class="reveal" style="font-size:clamp(34px,5vw,60px);font-weight:800;line-height:1.08;letter-spacing:-2px;margin-bottom:22px;color:#fff">
+          WEBSITE PROFESIONAL<br>UNTUK BISNIS<br><span class="gradient-text">WISATA &amp; HOSPITALITY</span>
+        </h1>
+
+        <p class="reveal" style="font-size:17px;line-height:1.75;color:#a0bedd;margin-bottom:36px">
+          Kami membantu homestay, villa, tour travel, dan bisnis wisata mendapatkan lebih banyak booking melalui website profesional.
+        </p>
+
+        <div class="reveal" style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px">
+          <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20ingin%20konsultasi%20website" target="_blank" rel="noopener" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Konsultasi Gratis
+          </a>
+          <a href="#portfolio" class="btn-secondary">
+            Lihat Portfolio
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div id="stats-row" class="reveal" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap">
+          <div>
+            <p style="font-size:32px;font-weight:800;color:#fbbf24;line-height:1"><span data-target="50" data-suffix="+">50+</span></p>
+            <p style="font-size:12px;color:#a0bedd;margin-top:3px">Project Selesai</p>
+          </div>
+          <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
+          <div>
+            <p style="font-size:32px;font-weight:800;color:#fbbf24;line-height:1"><span data-target="3" data-suffix=" Hari">3 Hari</span></p>
+            <p style="font-size:12px;color:#a0bedd;margin-top:3px">Pengerjaan</p>
+          </div>
+          <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
+          <div>
+            <p style="font-size:32px;font-weight:800;color:#fbbf24;line-height:1"><span data-target="100" data-suffix="%">100%</span></p>
+            <p style="font-size:12px;color:#a0bedd;margin-top:3px">Client Puas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Mockup card — hidden on mobile -->
+      <div class="reveal hidden lg:block" style="position:relative">
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(251,191,36,.25);border-radius:24px;padding:28px">
+          <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;overflow:hidden">
+            <div style="background:rgba(255,255,255,.05);padding:10px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06)">
+              <div style="display:flex;gap:5px">
+                <div style="width:9px;height:9px;border-radius:50%;background:#ef4444"></div>
+                <div style="width:9px;height:9px;border-radius:50%;background:#eab308"></div>
+                <div style="width:9px;height:9px;border-radius:50%;background:#22c55e"></div>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,.06);border-radius:5px;padding:4px 10px;font-size:10px;color:rgba(255,255,255,.3)">🔒 villasunrise-jogja.com</div>
+            </div>
+            <div style="background:linear-gradient(135deg,#071428,#153358);padding:28px 22px">
+              <p style="color:#fbbf24;font-size:9px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px">✦ Villa Premium Jogja</p>
+              <h3 style="color:#fff;font-size:22px;font-weight:800;line-height:1.15;margin-bottom:8px">Villa Sunrise<br><span style="color:#fbbf24">Yogyakarta</span></h3>
+              <p style="color:rgba(160,190,221,.7);font-size:11px;margin-bottom:18px">View Merapi · Private Pool · 5 Kamar</p>
+              <div style="display:flex;gap:8px">
+                <button style="background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#030c1a;font-weight:700;font-size:10px;padding:8px 14px;border-radius:7px;border:none;font-family:'Space Grotesk',sans-serif;cursor:default">📱 Booking WA</button>
+                <button style="background:transparent;color:#d4e3f5;font-size:10px;padding:8px 14px;border-radius:7px;border:1px solid rgba(255,255,255,.18);font-family:'Space Grotesk',sans-serif;cursor:default">Lihat Kamar</button>
+              </div>
+            </div>
+            <div style="padding:16px 22px;background:rgba(255,255,255,.025);display:flex;gap:10px">
+              <div style="flex:1;background:rgba(255,255,255,.04);border-radius:10px;padding:12px">
+                <p style="color:#fbbf24;font-size:16px;font-weight:800">18</p>
+                <p style="color:#a0bedd;font-size:9px;margin-top:1px">Booking bulan ini</p>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,.04);border-radius:10px;padding:12px">
+                <p style="color:#34d399;font-size:16px;font-weight:800">Rp 0</p>
+                <p style="color:#a0bedd;font-size:9px;margin-top:1px">Komisi platform</p>
+              </div>
+              <div style="flex:1;background:rgba(255,255,255,.04);border-radius:10px;padding:12px">
+                <p style="color:#fff;font-size:16px;font-weight:800">⭐ 4.9</p>
+                <p style="color:#a0bedd;font-size:9px;margin-top:1px">Google Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute;top:-14px;right:-14px;background:rgba(3,12,26,.92);border:1px solid rgba(251,191,36,.35);border-radius:12px;padding:10px 16px">
+          <p style="font-size:10px;color:#a0bedd">Website live dalam</p>
+          <p style="font-size:14px;font-weight:800;color:#fbbf24">≤ 7 Hari 🚀</p>
+        </div>
+        <div style="position:absolute;bottom:-14px;left:-14px;background:rgba(3,12,26,.92);border:1px solid rgba(52,211,153,.35);border-radius:12px;padding:10px 16px">
+          <p style="font-size:10px;color:#a0bedd">Tanpa komisi</p>
+          <p style="font-size:14px;font-weight:800;color:#34d399">100% Profit Anda</p>
+        </div>
+      </div>
+
+    </div><!-- /grid -->
+  </div><!-- /wrap -->
+
+  <div style="position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(transparent,#030c1a);pointer-events:none"></div>
+</section>
+
+
+<!-- ═══════════════════ MASALAH ═══════════════════ -->
+<section id="masalah" style="padding:96px 0;position:relative">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr;gap:56px;align-items:center">
+
+      <!-- Left -->
+      <div>
+        <div class="reveal section-label">Masalah Bisnis Wisata</div>
+        <h2 class="reveal" style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff;margin-bottom:20px">
+          Banyak bisnis wisata<br>kesulitan mendapat<br><span class="gradient-text">tamu baru</span>
+        </h2>
+        <p class="reveal" style="color:#a0bedd;font-size:16px;line-height:1.75;margin-bottom:40px">
+          Banyak homestay dan bisnis wisata kesulitan mendapatkan tamu baru karena tidak memiliki website sendiri.
+        </p>
+
+        <ul class="stagger" style="display:flex;flex-direction:column;gap:16px">
+          <li style="display:flex;align-items:flex-start;gap:14px">
+            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+            <div>
+              <p style="color:#fff;font-weight:600;font-size:15px;margin-bottom:3px">Wisatawan sulit menemukan bisnis Anda di Google</p>
+              <p style="color:#a0bedd;font-size:13px">Tanpa website, bisnis Anda tidak terindeks di mesin pencari</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:14px">
+            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+            <div>
+              <p style="color:#fff;font-weight:600;font-size:15px;margin-bottom:3px">Bergantung pada platform pihak ketiga</p>
+              <p style="color:#a0bedd;font-size:13px">Traveloka, Booking.com — bisnis Anda di tangan orang lain</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:14px">
+            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+            <div>
+              <p style="color:#fff;font-weight:600;font-size:15px;margin-bottom:3px">Harus membayar komisi setiap booking</p>
+              <p style="color:#a0bedd;font-size:13px">15–25% keuntungan Anda terpotong setiap transaksi</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:14px">
+            <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <div>
+              <p style="color:#fff;font-weight:600;font-size:15px;margin-bottom:3px">Bisnis terlihat kurang profesional tanpa website</p>
+              <p style="color:#a0bedd;font-size:13px">Calon tamu meragukan kredibilitas bisnis Anda</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: visual -->
+      <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div class="glass-card" style="padding:24px;grid-column:1 / -1">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+            <span style="width:10px;height:10px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:pulse 2s infinite"></span>
+            <p style="color:#fff;font-weight:700;font-size:14px">Tanpa Website</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <span style="font-size:12px;color:#a0bedd;white-space:nowrap">Visibilitas Google</span>
+              <div style="flex:1;height:6px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden"><div style="width:5%;height:100%;background:#ef4444;border-radius:10px"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <span style="font-size:12px;color:#a0bedd;white-space:nowrap">Kepercayaan Tamu</span>
+              <div style="flex:1;height:6px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden"><div style="width:20%;height:100%;background:#f97316;border-radius:10px"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <span style="font-size:12px;color:#a0bedd;white-space:nowrap">Potensi Booking</span>
+              <div style="flex:1;height:6px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden"><div style="width:12%;height:100%;background:#eab308;border-radius:10px"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card" style="padding:24px">
+          <p style="color:#ef4444;font-size:28px;font-weight:800;margin-bottom:4px">-25%</p>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.5">Profit dipotong<br>komisi platform</p>
+        </div>
+        <div class="glass-card" style="padding:24px">
+          <p style="color:#f97316;font-size:28px;font-weight:800;margin-bottom:4px">0</p>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.5">Trafik organik<br>dari Google</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ DAMPAK ═══════════════════ -->
+<section style="padding:80px 0;background:rgba(13,32,64,.3);position:relative">
+  <div class="divider" style="position:absolute;top:0;left:0;right:0"></div>
+  <div class="divider" style="position:absolute;bottom:0;left:0;right:0"></div>
+  <div class="wrap" style="text-align:center">
+    <div class="reveal section-label" style="justify-content:center">Dampak Tanpa Website</div>
+    <h2 class="reveal" style="font-size:clamp(26px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff;margin-bottom:12px">
+      TANPA WEBSITE SENDIRI,<br><span class="gradient-text">ANDA KEHILANGAN BANYAK PELUANG</span>
+    </h2>
+    <p class="reveal" style="color:#a0bedd;font-size:16px;margin-bottom:52px">Setiap hari tanpa website adalah peluang yang terlewat</p>
+    <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;text-align:left">
+      <div class="glass-card" style="padding:32px 24px">
+        <div style="font-size:32px;margin-bottom:14px">🔍</div>
+        <h3 style="color:#fff;font-weight:700;font-size:15px;margin-bottom:8px">Wisatawan tidak menemukan bisnis Anda di Google</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Kompetitor yang punya website sudah muncul duluan di halaman pertama</p>
+      </div>
+      <div class="glass-card" style="padding:32px 24px">
+        <div style="font-size:32px;margin-bottom:14px">😕</div>
+        <h3 style="color:#fff;font-weight:700;font-size:15px;margin-bottom:8px">Calon tamu ragu karena tidak ada informasi lengkap</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Tanpa foto, fasilitas, dan harga yang jelas, tamu memilih tempat lain</p>
+      </div>
+      <div class="glass-card" style="padding:32px 24px">
+        <div style="font-size:32px;margin-bottom:14px">📉</div>
+        <h3 style="color:#fff;font-weight:700;font-size:15px;margin-bottom:8px">Kalah bersaing dengan kompetitor yang punya website</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Di era digital, bisnis tanpa website tertinggal jauh dari pesaing</p>
+      </div>
+      <div class="glass-card" style="padding:32px 24px">
+        <div style="font-size:32px;margin-bottom:14px">🏷️</div>
+        <h3 style="color:#fff;font-weight:700;font-size:15px;margin-bottom:8px">Sulit membangun brand bisnis wisata Anda sendiri</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Brand yang kuat dimulai dari kehadiran digital yang konsisten</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ SOLUSI ═══════════════════ -->
+<section id="solusi" style="padding:96px 0;position:relative">
+  <div class="blob" style="width:400px;height:400px;top:50%;left:50%;transform:translate(-50%,-50%);opacity:.07;background:radial-gradient(circle,#1e4878,transparent 70%)"></div>
+  <div class="wrap" style="position:relative">
+    <div style="display:grid;grid-template-columns:1fr;gap:56px;align-items:center">
+
+      <div>
+        <div class="reveal section-label">Solusi RakLabs</div>
+        <h2 class="reveal" style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff;margin-bottom:20px">
+          Website yang<br><span class="gradient-text">bekerja keras</span><br>untuk bisnis Anda
+        </h2>
+        <p class="reveal" style="color:#a0bedd;font-size:16px;line-height:1.75;margin-bottom:36px">
+          RakLabs membantu bisnis wisata memiliki website profesional yang mudah ditemukan wisatawan dan menghasilkan booking langsung tanpa komisi.
+        </p>
+        <ul class="stagger" style="display:flex;flex-direction:column;gap:13px">
+          <li style="display:flex;align-items:center;gap:12px">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="color:#d4e3f5;font-size:15px;font-weight:500">Website modern &amp; profesional</span>
+          </li>
+          <li style="display:flex;align-items:center;gap:12px">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="color:#d4e3f5;font-size:15px;font-weight:500">Mobile friendly — tampil sempurna di HP</span>
+          </li>
+          <li style="display:flex;align-items:center;gap:12px">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="color:#d4e3f5;font-size:15px;font-weight:500">Booking langsung via WhatsApp, tanpa komisi</span>
+          </li>
+          <li style="display:flex;align-items:center;gap:12px">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="color:#d4e3f5;font-size:15px;font-weight:500">Galeri foto fasilitas yang menarik</span>
+          </li>
+          <li style="display:flex;align-items:center;gap:12px">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="color:#d4e3f5;font-size:15px;font-weight:500">Optimasi Google — mudah ditemukan wisatawan</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div style="border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.07)">
+            <div style="padding:16px;font-size:12px;color:#a0bedd"></div>
+            <div style="padding:16px;text-align:center;font-size:12px;font-weight:700;color:#ef4444">Tanpa Website</div>
+            <div style="padding:16px;text-align:center;font-size:12px;font-weight:700;color:#34d399;background:rgba(52,211,153,.05)">Dengan RakLabs</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,.05)">
+            <div style="padding:14px 16px;font-size:12px;color:#a0bedd">Visibilitas Google</div>
+            <div style="padding:14px;text-align:center;font-size:16px">❌</div>
+            <div style="padding:14px;text-align:center;font-size:16px;background:rgba(52,211,153,.04)">✅</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,.05)">
+            <div style="padding:14px 16px;font-size:12px;color:#a0bedd">Booking 24/7</div>
+            <div style="padding:14px;text-align:center;font-size:16px">❌</div>
+            <div style="padding:14px;text-align:center;font-size:16px;background:rgba(52,211,153,.04)">✅</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,.05)">
+            <div style="padding:14px 16px;font-size:12px;color:#a0bedd">Komisi Platform</div>
+            <div style="padding:14px;text-align:center;font-size:12px;font-weight:700;color:#ef4444">15–25%</div>
+            <div style="padding:14px;text-align:center;font-size:12px;font-weight:700;color:#34d399;background:rgba(52,211,153,.04)">0%</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,.05)">
+            <div style="padding:14px 16px;font-size:12px;color:#a0bedd">Branding Sendiri</div>
+            <div style="padding:14px;text-align:center;font-size:16px">❌</div>
+            <div style="padding:14px;text-align:center;font-size:16px;background:rgba(52,211,153,.04)">✅</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr">
+            <div style="padding:14px 16px;font-size:12px;color:#a0bedd">Kontrol Penuh</div>
+            <div style="padding:14px;text-align:center;font-size:16px">❌</div>
+            <div style="padding:14px;text-align:center;font-size:16px;background:rgba(52,211,153,.04)">✅</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ PORTFOLIO ═══════════════════ -->
+<section id="portfolio" style="padding:96px 0;position:relative">
+  <div class="divider"></div>
+  <div style="height:96px"></div>
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:56px">
+      <div class="section-label" style="justify-content:center">Contoh Hasil Kami</div>
+      <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff;margin-bottom:14px">
+        CONTOH WEBSITE<br><span class="gradient-text">YANG BISA ANDA MILIKI</span>
+      </h2>
+      <p style="color:#a0bedd;font-size:16px">Berbagai kategori bisnis wisata yang sudah kami kerjakan</p>
+    </div>
+    <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:40px">
+      <div class="portfolio-card">
+        <div style="background:linear-gradient(135deg,#071428,#153358);padding:32px 24px;position:relative;overflow:hidden">
+          <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(251,191,36,.2),transparent 70%);border-radius:50%"></div>
+          <div style="font-size:36px;margin-bottom:12px">🏡</div>
+          <p style="color:#fbbf24;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">Kategori</p>
+          <h3 style="color:#fff;font-size:18px;font-weight:800;margin-bottom:8px">Villa &amp; Homestay</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Website dengan galeri foto, info kamar, dan booking langsung via WhatsApp</p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:12px;color:#a0bedd">Lihat demo →</span>
+          <div style="display:flex;gap:4px">
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">SEO</span>
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Galeri</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div style="background:linear-gradient(135deg,#0d2040,#1e4878);padding:32px 24px;position:relative;overflow:hidden">
+          <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(251,191,36,.2),transparent 70%);border-radius:50%"></div>
+          <div style="font-size:36px;margin-bottom:12px">🗺️</div>
+          <p style="color:#fbbf24;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">Kategori</p>
+          <h3 style="color:#fff;font-size:18px;font-weight:800;margin-bottom:8px">Tour Travel</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Website paket wisata, itinerary, harga, dan form pemesanan online</p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:12px;color:#a0bedd">Lihat demo →</span>
+          <div style="display:flex;gap:4px">
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Booking</span>
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Paket</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div style="background:linear-gradient(135deg,#153358,#254773);padding:32px 24px;position:relative;overflow:hidden">
+          <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(251,191,36,.2),transparent 70%);border-radius:50%"></div>
+          <div style="font-size:36px;margin-bottom:12px">🚙</div>
+          <p style="color:#fbbf24;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">Kategori</p>
+          <h3 style="color:#fff;font-size:18px;font-weight:800;margin-bottom:8px">Rental Jeep Merapi</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Website dengan paket off-road, jadwal tersedia, dan pemesanan mudah</p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:12px;color:#a0bedd">Lihat demo →</span>
+          <div style="display:flex;gap:4px">
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Jadwal</span>
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">WA</span>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div style="background:linear-gradient(135deg,#1e4878,#2d6399);padding:32px 24px;position:relative;overflow:hidden">
+          <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(251,191,36,.2),transparent 70%);border-radius:50%"></div>
+          <div style="font-size:36px;margin-bottom:12px">🛵</div>
+          <p style="color:#fbbf24;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">Kategori</p>
+          <h3 style="color:#fff;font-size:18px;font-weight:800;margin-bottom:8px">Rental Motor Wisata</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Website katalog motor, tarif harian, syarat sewa, dan kontak langsung</p>
+        </div>
+        <div style="background:rgba(255,255,255,.025);padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:12px;color:#a0bedd">Lihat demo →</span>
+          <div style="display:flex;gap:4px">
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Katalog</span>
+            <span style="background:rgba(251,191,36,.15);color:#fbbf24;font-size:10px;font-weight:600;padding:3px 8px;border-radius:100px">Tarif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" style="text-align:center">
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20ingin%20melihat%20demo%20website" target="_blank" rel="noopener" class="btn-secondary">
+        Lihat Demo Website
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ KENAPA RAKLABS ═══════════════════ -->
+<section style="padding:80px 0;background:rgba(13,32,64,.25)">
+  <div class="divider"></div>
+  <div style="padding:80px 0">
+    <div class="wrap">
+      <div class="reveal" style="text-align:center;margin-bottom:52px">
+        <div class="section-label" style="justify-content:center">Keunggulan Kami</div>
+        <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff">
+          Kenapa Memilih<br><span class="gradient-text">RakLabs?</span>
+        </h2>
+      </div>
+      <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px">
+        <div class="glass-card" style="padding:28px 22px;text-align:center">
+          <div style="font-size:36px;margin-bottom:14px">🎯</div>
+          <h3 style="color:#fff;font-weight:700;font-size:14px;margin-bottom:6px">Fokus Bisnis Wisata</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Spesialis website untuk industri pariwisata &amp; hospitality Yogyakarta</p>
+        </div>
+        <div class="glass-card" style="padding:28px 22px;text-align:center">
+          <div style="font-size:36px;margin-bottom:14px">✨</div>
+          <h3 style="color:#fff;font-weight:700;font-size:14px;margin-bottom:6px">Desain Modern &amp; Profesional</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Tampilan yang menarik dan meningkatkan kepercayaan tamu</p>
+        </div>
+        <div class="glass-card" style="padding:28px 22px;text-align:center">
+          <div style="font-size:36px;margin-bottom:14px">⚡</div>
+          <h3 style="color:#fff;font-weight:700;font-size:14px;margin-bottom:6px">Website Cepat &amp; Mobile Friendly</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Loading cepat di HP — 80% tamu browsing via smartphone</p>
+        </div>
+        <div class="glass-card" style="padding:28px 22px;text-align:center">
+          <div style="font-size:36px;margin-bottom:14px">💬</div>
+          <h3 style="color:#fff;font-weight:700;font-size:14px;margin-bottom:6px">Booking via WhatsApp</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Tamu booking langsung ke Anda — nol komisi, profit penuh</p>
+        </div>
+        <div class="glass-card" style="padding:28px 22px;text-align:center">
+          <div style="font-size:36px;margin-bottom:14px">🆓</div>
+          <h3 style="color:#fff;font-weight:700;font-size:14px;margin-bottom:6px">Gratis Konsultasi</h3>
+          <p style="color:#a0bedd;font-size:12px;line-height:1.6">Diskusikan kebutuhan Anda dulu — tanpa biaya, tanpa tekanan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</section>
+
+
+<!-- ═══════════════════ PROSES KERJA ═══════════════════ -->
+<section style="padding:96px 0">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:64px">
+      <div class="section-label" style="justify-content:center">Cara Kerja</div>
+      <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff">
+        Proses Pembuatan<br><span class="gradient-text">Website Anda</span>
+      </h2>
+    </div>
+    <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:4px">
+      <div style="text-align:center;padding:32px 20px">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(251,191,36,.12);border:2px solid rgba(251,191,36,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px">💬</div>
+        <div style="display:inline-block;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.25);border-radius:100px;padding:3px 14px;font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:12px">STEP 1</div>
+        <h3 style="color:#fff;font-weight:700;font-size:16px;margin-bottom:8px">Konsultasi Gratis</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Kami diskusikan kebutuhan website bisnis wisata Anda</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;opacity:.35"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      <div style="text-align:center;padding:32px 20px">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(251,191,36,.12);border:2px solid rgba(251,191,36,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px">🎨</div>
+        <div style="display:inline-block;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.25);border-radius:100px;padding:3px 14px;font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:12px">STEP 2</div>
+        <h3 style="color:#fff;font-weight:700;font-size:16px;margin-bottom:8px">Desain Website</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Tim kami merancang tampilan sesuai brand bisnis Anda</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;opacity:.35"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      <div style="text-align:center;padding:32px 20px">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(251,191,36,.12);border:2px solid rgba(251,191,36,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px">⚙️</div>
+        <div style="display:inline-block;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.25);border-radius:100px;padding:3px 14px;font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:12px">STEP 3</div>
+        <h3 style="color:#fff;font-weight:700;font-size:16px;margin-bottom:8px">Development</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Website dibangun dengan teknologi modern dan responsif</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;opacity:.35"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      <div style="text-align:center;padding:32px 20px">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(251,191,36,.12);border:2px solid rgba(251,191,36,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px">🚀</div>
+        <div style="display:inline-block;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.25);border-radius:100px;padding:3px 14px;font-size:11px;font-weight:700;color:#fbbf24;margin-bottom:12px">STEP 4</div>
+        <h3 style="color:#fff;font-weight:700;font-size:16px;margin-bottom:8px">Launching Website</h3>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65">Website live dan siap menerima booking dari wisatawan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ HARGA ═══════════════════ -->
+<section id="harga" style="padding:96px 0;background:rgba(5,13,26,.5);position:relative">
+  <div class="divider" style="position:absolute;top:0;left:0;right:0"></div>
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:60px">
+      <div class="section-label" style="justify-content:center">Paket Harga</div>
+      <h2 style="font-size:clamp(28px,4vw,46px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff;margin-bottom:10px">
+        INVESTASI SEKALI,<br><span class="gradient-text">BOOKING TERUS</span>
+      </h2>
+      <p style="color:#a0bedd;font-size:16px">Tidak ada biaya langganan. Bayar sekali, website milik Anda selamanya.</p>
+    </div>
+    <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px">
+
+      <div class="pricing-card">
+        <p style="color:#a0bedd;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px">Basic</p>
+        <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:4px">
+          <span style="font-size:14px;color:#fbbf24;font-weight:600">Rp</span>
+          <span style="font-size:40px;font-weight:800;color:#fff;line-height:1">750rb</span>
+        </div>
+        <p style="color:#a0bedd;font-size:12px;margin-bottom:28px">Pembayaran sekali</p>
+        <div class="divider" style="margin-bottom:24px"></div>
+        <ul style="display:flex;flex-direction:column;gap:13px;margin-bottom:32px">
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 Halaman Landing Page</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Mobile Friendly</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Booking via WhatsApp</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Info Layanan &amp; Fasilitas</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(160,190,221,.3)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Galeri Foto</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(160,190,221,.3)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>SEO Optimasi</li>
+        </ul>
+        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20tertarik%20paket%20Basic" target="_blank" rel="noopener" class="btn-secondary" style="width:100%;justify-content:center">Pilih Paket Basic</a>
+      </div>
+
+      <div class="pricing-card featured" style="transform:scale(1.02)">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#030c1a;font-size:11px;font-weight:800;padding:5px 18px;border-radius:100px;white-space:nowrap">⭐ TERPOPULER</div>
+        <p style="color:#fbbf24;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px">Standard</p>
+        <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:4px">
+          <span style="font-size:14px;color:#fbbf24;font-weight:600">Rp</span>
+          <span style="font-size:40px;font-weight:800;color:#fff;line-height:1">1.5 jt</span>
+        </div>
+        <p style="color:#a0bedd;font-size:12px;margin-bottom:28px">Pembayaran sekali</p>
+        <div class="divider" style="margin-bottom:24px"></div>
+        <ul style="display:flex;flex-direction:column;gap:13px;margin-bottom:32px">
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>3 Halaman Website</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom Design</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Booking via WhatsApp</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Galeri Foto Lengkap</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SEO Dasar</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(160,190,221,.3)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Virtual Tour</li>
+        </ul>
+        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20tertarik%20paket%20Standard" target="_blank" rel="noopener" class="btn-primary" style="width:100%;justify-content:center">Pilih Paket Standard</a>
+      </div>
+
+      <div class="pricing-card">
+        <p style="color:#a0bedd;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px">Premium</p>
+        <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:4px">
+          <span style="font-size:14px;color:#fbbf24;font-weight:600">Rp</span>
+          <span style="font-size:40px;font-weight:800;color:#fff;line-height:1">3 jt</span>
+        </div>
+        <p style="color:#a0bedd;font-size:12px;margin-bottom:28px">Pembayaran sekali</p>
+        <div class="divider" style="margin-bottom:24px"></div>
+        <ul style="display:flex;flex-direction:column;gap:13px;margin-bottom:32px">
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5+ Halaman Website</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Premium Design</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Form Booking Online</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Virtual Tour 360°</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SEO Lanjutan</li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#d4e3f5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Support Prioritas 3 Bulan</li>
+        </ul>
+        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20tertarik%20paket%20Premium" target="_blank" rel="noopener" class="btn-secondary" style="width:100%;justify-content:center">Pilih Paket Premium</a>
+      </div>
+
+    </div>
+    <p class="reveal" style="text-align:center;color:#a0bedd;font-size:13px;margin-top:28px;opacity:.6">
+      Tidak yakin pilih paket apa? <a href="https://wa.me/628XXXXXXXXXX" target="_blank" rel="noopener" style="color:#fbbf24;text-decoration:none">Konsultasi gratis dulu →</a>
+    </p>
+  </div>
+  <div class="divider" style="position:absolute;bottom:0;left:0;right:0"></div>
+</section>
+
+
+<!-- ═══════════════════ TESTIMONI ═══════════════════ -->
+<section style="padding:96px 0">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <div class="section-label" style="justify-content:center">Testimoni</div>
+      <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.15;letter-spacing:-1px;color:#fff">
+        Apa Kata <span class="gradient-text">Client Kami</span>
+      </h2>
+    </div>
+    <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+      <div class="testimonial-card">
+        <div style="color:#fbbf24;font-size:16px;margin-bottom:16px">★★★★★</div>
+        <p style="color:#d4e3f5;font-size:15px;line-height:1.75;margin-bottom:20px;font-style:italic">"Website kami sekarang terlihat lebih profesional dan tamu lebih mudah menghubungi kami. Booking meningkat signifikan sejak punya website sendiri!"</p>
+        <div style="display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(251,191,36,.2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fbbf24;flex-shrink:0">A</div>
+          <div>
+            <p style="color:#fff;font-weight:600;font-size:14px">Pak Ahmad</p>
+            <p style="color:#a0bedd;font-size:12px">Owner Villa, Sleman</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div style="color:#fbbf24;font-size:16px;margin-bottom:16px">★★★★★</div>
+        <p style="color:#d4e3f5;font-size:15px;line-height:1.75;margin-bottom:20px;font-style:italic">"RakLabs membantu bisnis kami lebih mudah ditemukan di Google. Sekarang wisatawan bisa langsung booking tanpa harus bayar komisi platform."</p>
+        <div style="display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(52,211,153,.2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#34d399;flex-shrink:0">S</div>
+          <div>
+            <p style="color:#fff;font-weight:600;font-size:14px">Bu Sari</p>
+            <p style="color:#a0bedd;font-size:12px">Owner Homestay, Kaliurang</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div style="color:#fbbf24;font-size:16px;margin-bottom:16px">★★★★★</div>
+        <p style="color:#d4e3f5;font-size:15px;line-height:1.75;margin-bottom:20px;font-style:italic">"Prosesnya cepat, hasilnya memuaskan. Website jeep rental kami sekarang tampak profesional dan tamu bisa langsung cek jadwal &amp; pesan via WA."</p>
+        <div style="display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(251,191,36,.2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fbbf24;flex-shrink:0">B</div>
+          <div>
+            <p style="color:#fff;font-weight:600;font-size:14px">Pak Budi</p>
+            <p style="color:#a0bedd;font-size:12px">Pemilik Jeep Merapi, Cangkringan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section style="padding:80px 0;background:rgba(13,32,64,.2)">
+  <div class="divider"></div>
+  <div style="padding:80px 0">
+    <div class="wrap-sm">
+      <div class="reveal" style="text-align:center;margin-bottom:48px">
+        <div class="section-label" style="justify-content:center">FAQ</div>
+        <h2 style="font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.2;letter-spacing:-1px;color:#fff">
+          Pertanyaan yang<br><span class="gradient-text">Sering Ditanyakan</span>
+        </h2>
+      </div>
+      <div class="reveal">
+        <div class="faq-item">
+          <button class="faq-trigger">Berapa lama proses pembuatan website?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Biasanya 3–7 hari kerja tergantung kompleksitas. Paket Basic bisa selesai 3 hari. Paket Standard dan Premium memerlukan 5–7 hari.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger">Apakah saya harus menyediakan hosting sendiri?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Tidak perlu. Untuk paket Basic dan Standard kami bantu rekomendasikan dan setup hosting terjangkau. Paket Premium sudah termasuk domain dan hosting 1 tahun.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger">Apakah website bisa dibuka di HP?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Ya, semua website kami 100% mobile friendly. Tampilan otomatis menyesuaikan layar HP, tablet, maupun laptop.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger">Apakah bisa request revisi setelah website jadi?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Tentu. Semua paket mendapatkan 2x revisi gratis. Paket Premium mendapat revisi unlimited selama 30 hari pertama.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger">Konten website siapa yang menyiapkan?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Anda cukup siapkan foto dan deskripsi singkat. Tim kami akan bantu menyusun konten yang menarik dan SEO-friendly.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger">Apakah ada garansi website terindeks Google?<span class="faq-icon">+</span></button>
+          <div class="faq-body"><div class="faq-body-inner">Untuk paket Standard dan Premium kami melakukan optimasi SEO agar website cepat terindeks Google. Proses indexing biasanya 1–4 minggu.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</section>
+
+
+<!-- ═══════════════════ CTA FINAL ═══════════════════ -->
+<section style="padding:96px 0;position:relative;overflow:hidden;text-align:center">
+  <div class="blob" style="width:700px;height:500px;top:50%;left:50%;transform:translate(-50%,-50%);opacity:.1;background:radial-gradient(ellipse,#fbbf24,transparent 65%)"></div>
+  <div class="wrap-sm" style="position:relative">
+    <div class="reveal">
+      <div class="section-label" style="justify-content:center">Mulai Sekarang</div>
+      <h2 style="font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:#fff;margin-bottom:20px">
+        SIAP MENDAPATKAN<br><span class="gradient-text">LEBIH BANYAK BOOKING?</span>
+      </h2>
+      <p style="color:#a0bedd;font-size:17px;line-height:1.75;margin-bottom:40px">
+        Konsultasikan kebutuhan website bisnis wisata Anda secara gratis. Tim kami siap membantu dalam <strong style="color:#fff">kurang dari 1 jam.</strong>
+      </p>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20RakLabs,%20saya%20ingin%20konsultasi%20gratis%20website%20bisnis%20wisata" target="_blank" rel="noopener" class="btn-primary" style="padding:18px 40px;font-size:17px;border-radius:14px">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Konsultasi Gratis Sekarang
+      </a>
+      <p style="color:#a0bedd;font-size:13px;margin-top:16px;opacity:.5">Respon cepat melalui WhatsApp · Tanpa biaya konsultasi</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ KONTAK ═══════════════════ -->
+<section id="kontak" style="padding:80px 0;background:rgba(7,20,40,.6)">
+  <div class="divider"></div>
+  <div style="padding:80px 0">
+    <div class="wrap-md">
+      <div class="reveal" style="text-align:center;margin-bottom:48px">
+        <div class="section-label" style="justify-content:center">Kontak</div>
+        <h2 style="font-size:clamp(26px,4vw,40px);font-weight:800;color:#fff;letter-spacing:-1px">Hubungi Kami</h2>
+      </div>
+      <div class="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+        <a href="https://wa.me/628XXXXXXXXXX" target="_blank" rel="noopener" class="contact-item">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbf24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+          <div>
+            <p style="color:#a0bedd;font-size:11px;margin-bottom:2px">WhatsApp</p>
+            <p style="color:#fff;font-weight:600;font-size:15px">+62 xxx xxx xxx</p>
+          </div>
+        </a>
+        <a href="https://instagram.com/raklabs" target="_blank" rel="noopener" class="contact-item">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <div>
+            <p style="color:#a0bedd;font-size:11px;margin-bottom:2px">Instagram</p>
+            <p style="color:#fff;font-weight:600;font-size:15px">@raklabs</p>
+          </div>
+        </a>
+        <a href="mailto:hello@raklabs.id" class="contact-item">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <p style="color:#a0bedd;font-size:11px;margin-bottom:2px">Email</p>
+            <p style="color:#fff;font-weight:600;font-size:15px">hello@raklabs.id</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</section>
+
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer style="padding:48px 0 32px">
+  <div class="wrap">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:32px;margin-bottom:40px">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#fbbf24,#f59e0b);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#030c1a" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <span style="color:#fff;font-weight:800;font-size:18px">Rak<span style="color:#fbbf24">Labs</span></span>
+        </div>
+        <p style="color:#a0bedd;font-size:13px;line-height:1.65;max-width:220px">Website untuk Bisnis Wisata &amp; Hospitality</p>
+        <p style="color:#a0bedd;font-size:13px;margin-top:4px">Yogyakarta, Indonesia</p>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;gap:12px 32px">
+        <a href="#masalah"   style="color:#a0bedd;font-size:14px">Masalah</a>
+        <a href="#solusi"    style="color:#a0bedd;font-size:14px">Solusi</a>
+        <a href="#portfolio" style="color:#a0bedd;font-size:14px">Portfolio</a>
+        <a href="#harga"     style="color:#a0bedd;font-size:14px">Harga</a>
+        <a href="#kontak"    style="color:#a0bedd;font-size:14px">Kontak</a>
+      </nav>
+    </div>
+    <div class="divider" style="margin-bottom:24px"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+      <p style="color:#a0bedd;font-size:13px;opacity:.5">© 2025 RakLabs. All rights reserved.</p>
+      <p style="color:#a0bedd;font-size:12px;opacity:.4">Made with ❤️ for bisnis wisata Yogyakarta</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Two-column grid on large screens only -->
+<style>
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(.85)} }
+@media (min-width: 1024px) {
+  #hero .wrap > div,
+  #masalah .wrap > div,
+  #solusi .wrap > div { grid-template-columns: 1fr 1fr !important; }
+}
+</style>
+
+</body>
+</html>
